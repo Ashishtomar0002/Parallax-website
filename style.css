@@ -3,6 +3,37 @@
     padding: 0;
     box-sizing: border-box;
     text-transform:uppercase;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700;
 }
 #wrapper{
     height: 100vh;
@@ -88,4 +119,17 @@ section{
     top: 50%;
     left: 50%;
     color: black;
+}
+.footer {
+    background-color: black;
+    color: rgb(45, 45, 45);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    margin: 0;
 }
